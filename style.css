@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+:root {
+    --NGO-YELLOW: #f2ea46;
+}
+
+body {
+    font-family: 'Inconsolata', sans-serif;
+  }
+
+.carousel-inner > .carousel-item > img {
+    height: 50vh;
+    object-fit: cover !important;
+  }
+
+  /* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carousel-inner > .carousel-item > img {
+    height: 100vh;
+    object-fit: cover !important;
+  }
+} 
+
+.nav-custom {
+    background-color: var(--NGO-YELLOW);
+}
+
