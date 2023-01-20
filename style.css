@@ -6,21 +6,58 @@
 
 body {
     font-family: 'Inconsolata', sans-serif;
+    padding-top: 60px;
   }
 
+.social-button-custom {
+  padding-top: 16px;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+
+.social-button-custom > div {
+  font-size: 45px;
+  cursor: pointer;
+  padding: 0 0 0 0;
+}
+
+.social-button-custom > div > i:hover{
+  background-color: black;
+}
+
+.carousel-custom {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px 10px;;
+  overflow: hidden;
+}
+
 .carousel-inner > .carousel-item > img {
-    height: 50vh;
+    height: 60vh;
     object-fit: cover !important;
   }
 
   /* Large devices (large desktops, 992px and up) */
-@media (min-width: 992px) {
+  
+  @media (max-width: 991.98px) {
     .carousel-inner > .carousel-item > img {
-    height: 100vh;
-    object-fit: cover !important;
-  }
-} 
+      height: 70vh;
+      object-fit: cover !important;
+    }
+  } 
+  
+  @media (max-width: 575.98px) { 
+    .carousel-inner > .carousel-item > img {
+       height: 70vh;
+       object-fit: cover !important;
+    } 
 
+    .social-button-custom > div {
+      font-size: 25px;
+    }
+  }  
+  
 .nav-custom {
     background-color: var(--NGO-YELLOW);
 }
