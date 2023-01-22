@@ -1,13 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 
 :root {
-    --NGO-YELLOW: #f2ea46;
+  --NGO-BACKGROUND: #fafaf2;
+  --NGO-DONATE: #f26a36;
+  --NGO-DONATE-RED: #ec2b2b;
+  --NGO-YELLOW: #f9ee34;
+  --NGO-YELLOW-PLAT: #f5e3c3;
 }
 
 body {
     font-family: 'Inconsolata', sans-serif;
     padding-top: 60px;
+    background-color: var(--NGO-BACKGROUND);
   }
+
+.nav-custom {
+  box-shadow: 0 6px 44px 0 rgba(0,0,0,.2);
+}
+
+.nav-logo-div-custom {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.nav-logo-custom {
+  height: 2.5em;
+  width: auto;
+}
+
+.donate-custom {
+  background-color: var(--NGO-DONATE);
+  padding: 9px 24px 9px 24px;
+  transition:0.5s; 
+}
+.donate-custom:hover {
+  background-color: var(--NGO-DONATE-RED);
+}
 
 .social-button-custom {
   padding-top: 16px;
@@ -21,40 +49,53 @@ body {
   padding: 0 0 0 0;
 }
 
-.social-button-custom > div > i:hover{
-  background-color: black;
-}
-
 .carousel-custom {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px 10px 10px 10px;;
+  border-radius: 10px 10px 10px 10px;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 .carousel-inner > .carousel-item > img {
     height: 60vh;
     object-fit: cover !important;
+    position: Relative;
   }
+  
 
   /* Large devices (large desktops, 992px and up) */
   
   @media (max-width: 991.98px) {
     .carousel-inner > .carousel-item > img {
-      height: 70vh;
+      height: 50vh;
       object-fit: cover !important;
+    }
+    .carousel-custom {
+      width: 100%;
+      border-radius: 0 0 0 0;
+      margin: 0 0 0 0;
+    }
+
+    .donate-custom {
+      padding: 4px 12px 4px 12px;
     }
   } 
   
   @media (max-width: 575.98px) { 
     .carousel-inner > .carousel-item > img {
-       height: 70vh;
+       height: 50vh;
        object-fit: cover !important;
     } 
+    .carousel-custom {
+      width: 100%;
+      border-radius: 0 0 0 0;
+      margin: 0 0 0 0;
+    }
 
     .social-button-custom > div {
-      font-size: 25px;
+      font-size: 30px;
     }
   }  
   
